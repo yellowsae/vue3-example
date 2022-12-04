@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // 导入组件
 import MySelect from "../modules/my-ui/Select/index.vue"
+import MyLink from "../modules/my-ui/Link/index.vue"
 import { ref } from "vue"
 interface selectData  {
   value: string;
@@ -47,8 +48,36 @@ let setOption = (index:number, item:selectData) => {
       :data="data"  
       :currentIndex="currIdx"
       :callback="setOption"
-    ></my-select>    
-    <!-- <my-link></my-link> -->
+    ></my-select>
+    <hr />
+
+    <my-link
+      href="https://cn.bing.com/"
+      type="primary"
+      target="_blank">
+      必应
+    </my-link>
+    <br>
+    <my-link
+      href="https://cn.bing.com/"
+      type="success"
+      >
+      必应
+    </my-link>
+    <br>
+    <my-link
+      href="https://cn.bing.com/"
+      type="warning"
+      target="_blank">
+      必应
+    </my-link>
+    <br>
+    <my-link
+      href="https://cn.bing.com/"
+      type="danger"
+      target="_blank">
+      必应
+    </my-link>
   </div>
 </template>
 
