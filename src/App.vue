@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // 导入组件
-import MySelect from "../modules/my-ui/Select/index.vue"
-import MyLink from "../modules/my-ui/Link/index.vue"
+// import MySelect from "../modules/my-ui/Select/index.vue"
+// import MyLink from "../modules/my-ui/Link/index.vue"
 import { ref } from "vue"
 interface selectData  {
   value: string;
